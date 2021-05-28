@@ -11,7 +11,6 @@ class SpriteGroup {
 
   SpriteGroup({this.spriteList, this.textureHeight, this.textureWidth});
 
-
   SpriteGroup.fromSpriteSheet({
     String path,
     int rows,
@@ -19,7 +18,6 @@ class SpriteGroup {
     int textureWidth,
     int textureHeight,
   }) {
-
     SpriteSheet spriteSheet = SpriteSheet(
       imageName: path,
       textureWidth: textureWidth,
@@ -39,7 +37,6 @@ class SpriteGroup {
     this.spriteList = sprites;
     this.textureWidth = textureWidth;
     this.textureHeight = textureHeight;
-
   }
 
   SpriteGroup.fromProvidedList({

@@ -28,19 +28,19 @@ class StorageManager {
     box = await Hive.openBox(HIVE_BOX_NAME);
   }
 
-  int getSelectedBackgroundIndex(){
-    return box.get(SELECTED_BACKGROUND_INDEX_KEY,defaultValue: 0);
+  int getSelectedBackgroundIndex() {
+    return box.get(SELECTED_BACKGROUND_INDEX_KEY, defaultValue: 0);
   }
 
-  void setSelectedBackgroundIndex(int value){
+  void setSelectedBackgroundIndex(int value) {
     box.put(SELECTED_BACKGROUND_INDEX_KEY, value);
   }
 
-  int getHighestScore(){
+  int getHighestScore() {
     return box.get(HIGHEST_SCORE_KEY, defaultValue: 0);
   }
 
-  void setHighestScore(int score){
+  void setHighestScore(int score) {
     box.put(HIGHEST_SCORE_KEY, score);
   }
 

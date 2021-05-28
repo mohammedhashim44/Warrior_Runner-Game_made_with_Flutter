@@ -27,15 +27,8 @@ class Bullet extends AnimationComponent {
       rows: 1,
     );
 
-    this.animation = spriteSheet.createAnimation(
-      0,
-      from: 0,
-      to: 5,
-      stepTime: 0.1,
-      loop: true
-    );
-
-
+    this.animation = spriteSheet.createAnimation(0,
+        from: 0, to: 5, stepTime: 0.1, loop: true);
   }
 
   @override
@@ -49,10 +42,8 @@ class Bullet extends AnimationComponent {
     return (this.x > (_size.width + this.width));
   }
 
-
   @override
   void resize(Size size) {
     _size = size;
   }
-
 }

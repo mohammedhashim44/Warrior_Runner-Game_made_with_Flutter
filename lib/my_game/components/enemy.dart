@@ -63,7 +63,6 @@ class Enemy extends AnimationComponent {
     this.width = _enemyData.deathSpriteGroup.textureWidth.toDouble() *
         _scale *
         _enemyData.customScale;
-
   }
 
   bool isDead() {

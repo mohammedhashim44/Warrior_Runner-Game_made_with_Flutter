@@ -59,7 +59,8 @@ class _MainMenuState extends State<MainMenu> {
                     child: myWidget,
                     duration: Duration(milliseconds: 500),
                     reverseDuration: Duration(milliseconds: 500),
-                    transitionBuilder: (Widget child, Animation<double> animation) {
+                    transitionBuilder:
+                        (Widget child, Animation<double> animation) {
                       return ScaleTransition(scale: animation, child: child);
                     },
                     switchInCurve: Curves.bounceInOut,

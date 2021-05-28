@@ -36,9 +36,8 @@ class SettingsManager {
     StorageManager.instance.setSfxSettings(value);
   }
 
-  void setBackgroundIndex(int value){
-    _backgroundIndexNotifier.value = value ;
+  void setBackgroundIndex(int value) {
+    _backgroundIndexNotifier.value = value;
     StorageManager.instance.setSelectedBackgroundIndex(value);
   }
-
 }

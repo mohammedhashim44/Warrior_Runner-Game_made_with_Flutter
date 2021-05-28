@@ -13,21 +13,18 @@ class AudioManager {
 
   static AudioManager get instance => _instance;
 
-
   Future<void> init() async {
     Flame.audio.disableLog();
     Flame.audio.clearAll();
 
     random = Random();
-
   }
 
-
-  bool canPlaySfx(){
+  bool canPlaySfx() {
     return SettingsManager.instance.listenableSfx.value;
   }
 
-  bool canPlayBgm(){
+  bool canPlayBgm() {
     return SettingsManager.instance.listenableBgm.value;
   }
 
@@ -58,11 +55,12 @@ class AudioManager {
     }
   }
 
-  void playExplosionSound(){
+  void playExplosionSound() {
     String file = getRandomElement(AudioData.explosionSounds);
     playSfx(file);
   }
-  void playAttackSound(){
+
+  void playAttackSound() {
     String file = getRandomElement(AudioData.attackSounds);
     playSfx(file);
   }
@@ -83,8 +81,7 @@ class AudioManager {
     }
   }
 
-
-  String getRandomElement(List<String> list){
+  String getRandomElement(List<String> list) {
     int index = random.nextInt(list.length);
     return list[index];
   }

@@ -14,13 +14,12 @@ class Explosion extends AnimationComponent {
   double _textureWidth = 46;
   double _textureHeight = 46;
 
-  Explosion(double x, double y,Size size) : super.empty() {
-
+  Explosion(double x, double y, Size size) : super.empty() {
     double _scale = (size.height / constants.TILES_NUMBER_PER_HEIGHT) /
         (_textureHeight * 1);
 
-    this.height = _textureHeight.toDouble() * _scale ;
-    this.width = _textureWidth.toDouble() * _scale ;
+    this.height = _textureHeight.toDouble() * _scale;
+    this.width = _textureWidth.toDouble() * _scale;
 
     this.x = x;
     this.y = y;
@@ -54,5 +53,4 @@ class Explosion extends AnimationComponent {
   bool destroy() {
     return this.animation.done();
   }
-
 }

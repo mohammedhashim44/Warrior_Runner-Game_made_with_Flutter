@@ -107,7 +107,9 @@ class _PlayGameMenuState extends State<PlayGameMenu> {
                 Icons.help,
                 color: Colors.white,
               ),
-              SizedBox(width: 5,),
+              SizedBox(
+                width: 5,
+              ),
               Text(
                 "How to Play",
                 textAlign: TextAlign.center,
@@ -116,7 +118,6 @@ class _PlayGameMenuState extends State<PlayGameMenu> {
                   color: Colors.white,
                 ),
               ),
-
             ],
           ),
           SizedBox(

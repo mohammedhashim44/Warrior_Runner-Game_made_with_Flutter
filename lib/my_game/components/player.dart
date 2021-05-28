@@ -135,7 +135,7 @@ class Player extends AnimationComponent with HasGameRef {
   }
 
   void jump() {
-    if (isOnGround() &&  !_isAttacking) {
+    if (isOnGround() && !_isAttacking) {
       AudioManager.instance.playJumpSound();
       speedY = constants.JUMP_SPEED_Y;
       this.animation = jumping;
