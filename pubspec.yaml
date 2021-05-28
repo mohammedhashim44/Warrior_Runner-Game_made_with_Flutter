@@ -1,0 +1,53 @@
+name: flutter_game
+description: A new Flutter application.
+
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.7.0 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  cupertino_icons: ^1.0.0
+  flame: 0.29.3
+  hive: 1.5.0-pre
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/
+    - assets/images/
+    - assets/images/parallax/
+    - assets/images/parallax/parallax_1/
+    - assets/images/parallax/parallax_2/
+    - assets/images/parallax/parallax_3/
+    - assets/images/player/
+    - assets/images/player/Run/
+    - assets/images/player/Jump/
+    - assets/images/player/Hurt-Effect/
+    - assets/images/player/Death-Effect/
+    - assets/images/player/Dash Attack/
+    - assets/images/enemies/
+    - assets/images/enemies/knight/run/
+    - assets/images/enemies/knight/death/
+    - assets/images/enemies/adventurer/run/
+    - assets/images/enemies/adventurer/death/
+    - assets/images/enemies/bat/
+    - assets/images/enemies/gino/death/
+    - assets/images/enemies/gino/run/
+    - assets/images/enemies/skeleton/
+    - assets/images/bullet/
+    - assets/audio/
+  fonts:
+    - family: Audiowide
+      fonts:
+        - asset: assets/fonts/Audiowide/Audiowide-Regular.ttf
