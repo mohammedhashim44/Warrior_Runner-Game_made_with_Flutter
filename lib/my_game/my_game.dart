@@ -107,7 +107,7 @@ class MyGame extends BaseGame with TapDetector, HasWidgetsOverlay {
 
       var distance = (playerPosition - enemyPosition).distance.abs();
 
-      if ( distance <= 30 ) {
+      if (distance <= 30) {
         _player.hit();
       }
     });

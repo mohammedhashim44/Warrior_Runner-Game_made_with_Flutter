@@ -1,6 +1,6 @@
 import 'package:flutter_game/my_game/models/sprite_group.dart';
 
-import '../constants.dart' as constants ;
+import '../constants.dart' as constants;
 
 class EnemyData {
   final SpriteGroup runSpriteGroup;
@@ -12,7 +12,7 @@ class EnemyData {
   final double deathStepTime;
 
   final double speed;
-  final double customScale ;
+  final double customScale;
 
   // Use this if the sprite you are using have some padding on the bottom
   // for example if your enemy sprite has 10px padding from bottom
@@ -23,11 +23,11 @@ class EnemyData {
   EnemyData({
     this.runSpriteGroup,
     this.deathSpriteGroup,
-    this.flipX : true,
-    this.runStepTime : constants.DEFAULT_RUN_STEP_TIME,
-    this.deathStepTime : constants.DEFAULT_DEATH_STEP_TIME,
-    this.speed : constants.DEFAULT_ENEMY_SPEED_X,
-    this.customScale : 1,
-    this.fromGroundOffset = 0 ,
+    this.flipX: true,
+    this.runStepTime: constants.DEFAULT_RUN_STEP_TIME,
+    this.deathStepTime: constants.DEFAULT_DEATH_STEP_TIME,
+    this.speed: constants.DEFAULT_ENEMY_SPEED_X,
+    this.customScale: 1,
+    this.fromGroundOffset = 0,
   });
 }

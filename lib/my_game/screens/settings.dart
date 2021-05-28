@@ -96,7 +96,6 @@ class _SettingsState extends State<Settings> {
                 child: Row(
                   mainAxisSize: MainAxisSize.max,
                   children: backgroundImages.map((e) {
-
                     int index = backgroundImages.indexOf(e);
                     bool backgroundSelected = index == selectedIndex;
 
@@ -105,8 +104,8 @@ class _SettingsState extends State<Settings> {
                         onTap: () {
                           if (!backgroundSelected) {
                             SettingsManager.instance.setBackgroundIndex(index);
-                            SettingsManager
-                                .instance.listenableBackgroundIndex.value = index;
+                            SettingsManager.instance.listenableBackgroundIndex
+                                .value = index;
                           }
                         },
                         child: BackgroundImageWidget(
@@ -115,7 +114,6 @@ class _SettingsState extends State<Settings> {
                         ),
                       ),
                     );
-
                   }).toList(),
                 ),
               );
@@ -131,7 +129,7 @@ class BackgroundImageWidget extends StatelessWidget {
   final String image;
   final bool isSelected;
 
-  const BackgroundImageWidget(this.image,{this.isSelected : false});
+  const BackgroundImageWidget(this.image, {this.isSelected: false});
 
   @override
   Widget build(BuildContext context) {
@@ -146,10 +144,12 @@ class BackgroundImageWidget extends StatelessWidget {
           ),
           fit: BoxFit.cover,
         ),
-        border:  !isSelected ? null : Border.all(
-          color: Colors.yellow,
-          width: 2,
-        ),
+        border: !isSelected
+            ? null
+            : Border.all(
+                color: Colors.yellow,
+                width: 2,
+              ),
         color: Colors.transparent,
       ),
     );

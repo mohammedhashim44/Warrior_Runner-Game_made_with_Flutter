@@ -76,7 +76,6 @@ Future<void> loadGameImages() async {
 }
 
 Future<void> loadAudioFiles() async {
-
   List<String> allAudioFiles = [];
   allAudioFiles
     ..add(AudioData.backgroundMusic)

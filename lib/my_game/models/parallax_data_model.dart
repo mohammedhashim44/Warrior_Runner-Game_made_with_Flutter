@@ -26,7 +26,10 @@ class ParallaxData {
     List<ParallaxImage> images = [];
 
     layers.forEach((layer) {
-      ParallaxImage parallaxImage = ParallaxImage(layer,fill: LayerFill.height,);
+      ParallaxImage parallaxImage = ParallaxImage(
+        layer,
+        fill: LayerFill.height,
+      );
       images.add(parallaxImage);
     });
 

@@ -37,8 +37,7 @@ class EnemyManager extends Component with HasGameRef<MyGame> {
   }
 
   @override
-  void render(Canvas c) {
-  }
+  void render(Canvas c) {}
 
   @override
   void update(double t) {
@@ -56,7 +55,7 @@ class EnemyManager extends Component with HasGameRef<MyGame> {
     }
   }
 
-  void reset(){
+  void reset() {
     _spawnLevel = 0;
     _timer = Timer(constants.ENEMY_RESPAWN_RATE_IN_SECONDS,
         repeat: true, callback: spawnEnemy);

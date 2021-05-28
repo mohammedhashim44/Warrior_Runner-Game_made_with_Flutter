@@ -41,14 +41,14 @@ class HudWidget extends StatelessWidget {
               onPauseClicked.call();
             },
           ),
-          SizedBox(width: 20,),
+          SizedBox(
+            width: 20,
+          ),
           ValueListenableBuilder<double>(
             valueListenable: attackTimerProgress,
             builder: (context, double value, child) {
-
               double progressValue = min(1.0, value);
-              if(progressValue  == 0.0)
-                progressValue = 1.0;
+              if (progressValue == 0.0) progressValue = 1.0;
 
               bool attackReady = progressValue == 1.0;
               String valueString =
@@ -68,13 +68,16 @@ class HudWidget extends StatelessWidget {
                         ),
                       ),
                     ),
-                    SizedBox(width: 20,),
+                    SizedBox(
+                      width: 20,
+                    ),
                     SizedBox(
                       width: 80,
                       child: Container(
                         decoration: BoxDecoration(
                           borderRadius: BorderRadius.circular(8),
-                          color: attackReady ? Colors.white : Colors.transparent,
+                          color:
+                              attackReady ? Colors.white : Colors.transparent,
                         ),
                         child: Column(
                           mainAxisSize: MainAxisSize.min,
@@ -82,14 +85,16 @@ class HudWidget extends StatelessWidget {
                             Text(
                               "Attack",
                               style: TextStyle(
-                                color: attackReady ? Colors.black : Colors.white,
+                                color:
+                                    attackReady ? Colors.black : Colors.white,
                                 fontSize: 15,
                               ),
                             ),
                             Text(
                               attackReady ? "Ready" : "Loading",
                               style: TextStyle(
-                                color: attackReady ? Colors.black : Colors.white,
+                                color:
+                                    attackReady ? Colors.black : Colors.white,
                                 fontSize: 15,
                               ),
                             ),

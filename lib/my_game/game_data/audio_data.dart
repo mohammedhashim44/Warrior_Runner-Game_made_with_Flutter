@@ -8,9 +8,9 @@ class AudioData {
   ];
 
   static List<String> damageSounds = [
-      "damaged1.wav",
-      "damaged2.wav",
-      "damaged3.wav",
+    "damaged1.wav",
+    "damaged2.wav",
+    "damaged3.wav",
   ];
 
   static List<String> jumpSounds = [
@@ -18,7 +18,5 @@ class AudioData {
     "jump3.wav",
   ];
 
-  static List<String> explosionSounds = [
-    "rumble.flac"
-  ];
+  static List<String> explosionSounds = ["rumble.flac"];
 }
