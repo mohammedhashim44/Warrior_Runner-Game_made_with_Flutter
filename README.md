@@ -5,8 +5,6 @@ Worrior Runner - Game made with Flutter
     
 ##### Demo
 
-![Alt Text](screenshots/video.gif)
-
 <p float="left">
   <img src="screenshots/1.jpg" width="300" />
   <img src="screenshots/2.jpg" width="300" /> 
