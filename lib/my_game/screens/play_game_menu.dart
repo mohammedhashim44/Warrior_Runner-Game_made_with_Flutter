@@ -26,7 +26,7 @@ class _PlayGameMenuState extends State<PlayGameMenu> {
         crossAxisAlignment: CrossAxisAlignment.center,
         children: [
           Text(
-            "Worrior Runner",
+            "Warrior Runner",
             style: TextStyle(
               fontSize: 32,
               color: Colors.white,
