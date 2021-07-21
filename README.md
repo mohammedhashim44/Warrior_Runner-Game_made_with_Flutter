@@ -1,6 +1,6 @@
 
 
-Worrior Runner - Game made with Flutter 
+Warrior Runner - Game made with Flutter 
 -------------  
     
 #### Demo and Screenshot
