@@ -65,6 +65,9 @@ class EnemyManager extends Component with HasGameRef<MyGame> {
       newTime = max(newTime, constants.ENEMY_RESPAWN_MINIMUM_TIME);
       print("Spwan Level : $_spawnLevel , New Time : $newTime");
       _timer.stop();
+      if(_timer.progress >= 0.6){
+        spawnEnemy();
+      }
       _timer = Timer(newTime, repeat: true, callback: spawnEnemy);
       _timer.start();
     }
