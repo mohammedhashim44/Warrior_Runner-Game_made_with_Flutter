@@ -96,7 +96,7 @@ class MyGame extends BaseGame with TapDetector, HasWidgetsOverlay {
     );
   }
 
-  void checkPlayerCollision() {
+  void checkEnemyCollision() {
     // Only check the enemies that are alive
     components
         .whereType<Enemy>()
@@ -238,7 +238,7 @@ class MyGame extends BaseGame with TapDetector, HasWidgetsOverlay {
       _scoreComponent.text = score.toString();
     }
 
-    checkPlayerCollision();
+    checkEnemyCollision();
 
     checkBulletsCollision();
 
