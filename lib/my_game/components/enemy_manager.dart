@@ -15,6 +15,9 @@ class EnemyManager extends Component with HasGameRef<MyGame> {
   Timer _timer;
   int _spawnLevel;
 
+  // this is used to avoid unnecessary computations
+  bool reachedMaximumLevel = false;
+
   EnemyManager() {
     _random = Random();
     _timer = Timer(constants.ENEMY_RESPAWN_RATE_IN_SECONDS,
@@ -42,6 +45,10 @@ class EnemyManager extends Component with HasGameRef<MyGame> {
   @override
   void update(double t) {
     _timer.update(t);
+    if(reachedMaximumLevel){
+      return;
+    }
+    // Else compute new spawn time
     int score = gameRef.score;
     int newSpawnLevel = score ~/ 500;
     if (newSpawnLevel > _spawnLevel) {
@@ -49,6 +56,12 @@ class EnemyManager extends Component with HasGameRef<MyGame> {
       double newTime =
           (constants.ENEMY_RESPAWN_RATE_IN_SECONDS / (1 + (0.1 * _spawnLevel)));
 
+      // we don't want the respawn rate to be too high for the user
+      // as he could not jump and will just die
+      // so if the time reaches specified level , it will be fixed
+      if(newTime < constants.ENEMY_RESPAWN_MINIMUM_TIME){
+        reachedMaximumLevel = true;
+      }
       newTime = max(newTime, constants.ENEMY_RESPAWN_MINIMUM_TIME);
       print("Spwan Level : $_spawnLevel , New Time : $newTime");
       _timer.stop();
