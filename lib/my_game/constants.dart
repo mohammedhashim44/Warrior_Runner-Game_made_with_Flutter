@@ -13,7 +13,8 @@ const double DEFAULT_RUN_STEP_TIME = 0.05;
 const double DEFAULT_DEATH_STEP_TIME = 0.2;
 
 const double DEFAULT_ENEMY_SPEED_X = -250;
-const double ENEMY_RESPAWN_RATE_IN_SECONDS = 3;
+const double ENEMY_RESPAWN_RATE_IN_SECONDS = 4;
+const double ENEMY_RESPAWN_MINIMUM_TIME = 1.5;
 
 const double PLAYER_ATTACK_LOAD_TIME_IN_SECONDS = 4;
 const int PLAYER_LIVES = 10;
