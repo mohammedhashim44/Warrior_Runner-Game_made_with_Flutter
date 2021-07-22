@@ -143,11 +143,16 @@ class MyGame extends BaseGame with TapDetector, HasWidgetsOverlay {
 
           addLater(explosion);
           enemyKilled = true;
+          incrementScoreForEnemyKill();
 
           break;
         }
       }
     }
+  }
+
+  void incrementScoreForEnemyKill(){
+    score = score + constants.ENEMY_KILL_SCORE;
   }
 
   void onAttackTimerFinished() {
