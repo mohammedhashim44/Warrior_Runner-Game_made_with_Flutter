@@ -21,6 +21,10 @@ dev_dependencies:
     sdk: flutter
   flutter_launcher_icons: 0.8.1
 
+flutter_icons:
+  android: true
+  ios: true
+  image_path: "assets/icons/app_icon.png"
 
 flutter:
   uses-material-design: true
@@ -48,6 +52,7 @@ flutter:
     - assets/images/enemies/skeleton/
     - assets/images/bullet/
     - assets/audio/
+    - assets/icons/
   fonts:
     - family: Audiowide
       fonts:
