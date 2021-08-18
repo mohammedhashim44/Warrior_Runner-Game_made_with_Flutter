@@ -5,7 +5,7 @@ Warrior Runner - Game made with Flutter
     
 #### Demo and Screenshot
 
-![caption](https://github.com/mohammedhashim44/Warrior_Runner-Game_made_with_Flutter/releases/download/1.0/output.gif)
+![caption](https://github.com/mohammedhashim44/Warrior_Runner-Game_made_with_Flutter/releases/download/v1.0.0%2B1/output.gif)
 
 <p float="left">
   <img src="screenshots/1.jpg" width="300" />
