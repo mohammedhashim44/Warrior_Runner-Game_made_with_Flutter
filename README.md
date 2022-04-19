@@ -2,7 +2,10 @@
 
 Warrior Runner - Game made with Flutter 
 -------------  
-    
+
+### To try the game download the apk from the [Release Tab](https://github.com/mohammedhashim44/Warrior_Runner-Game_made_with_Flutter/releases/download/v1.0.1%2B2/app-release-v1.0.1.apk)  
+
+
 #### Demo and Screenshot
 
 ![caption](https://github.com/mohammedhashim44/Warrior_Runner-Game_made_with_Flutter/releases/download/v1.0.0%2B1/output.gif)
